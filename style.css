@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+    /* Font */
+    --FF: 'Outfit', sans-serif;
+    --FS: 15px;
+    --FW-P: 400;
+    --FW-H: 700;
+    --CENTER-TEXT: center;
+
+    /* Colors */
+    --CARD-COLOR: hsl(0, 0%, 100%);
+    --BG-COLOR: hsl(212, 45%, 89%);
+    --TEXT-COLOR: hsl(220, 15%, 55%);
+
+    /* Other */
+    --SHADOW: 8px 9px 15px -9px rgba(0,0,0,0.59);
+
+}
+
+body, html{
+  height: 100%;
+  font-family: var(--FF);
+  background-color:var(--BG-COLOR);
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.container{
+  display: flex;
+}
+.card{
+  background-color: var(--CARD-COLOR);
+  width: 400px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: var(--SHADOW);
+}
+.card img{
+  max-width: 100%;
+  border-radius: 15px;
+  height: auto;
+
+}
+.content{
+  text-align: var(--CENTER-TEXT);
+}
+.content h2{
+  font-weight: var(--FW-H);
+  color: var(--HEADING-COLOR);
+}
+.content p {
+  font-size: var(--FS);
+  font-weight: var(--FW-P);
+  color: var(--TEXT-COLOR);
+}
+.footer-content {
+  font-size: 12px;
+  text-align: var(--CENTER-TEXT);
+  padding-top: 20px;
+  opacity: 50%;
+}
+a {
+  color: rgb(41, 131, 199);
+}
+a:hover, a:focus {
+  color: rgb(48, 165, 255);
+}
